@@ -1,0 +1,17 @@
+html, body { 
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--bs-blue);
+}
+
+i {
+	font-size: 30px;
+	color: var(--bs-blue);
+}
