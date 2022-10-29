@@ -3,7 +3,7 @@
  * -------------------------- */
 // The date you want to count down to
 var targetDate = new Date("2023/1/1 00:00:00");   
-
+var videoDuration = 20500;
 // Other date related variables
 var days;
 var hrs;
@@ -13,6 +13,10 @@ var sec;
 /* --------------------------
  * ON DOCUMENT LOAD
  * -------------------------- */
+setTimeout(function() {
+// Show timer after video
+  document.querySelector("#countdown").hidden = false
+}, videoDuration);
 $(function() {
    // Calculate time until launch date
    timeToLaunch();
