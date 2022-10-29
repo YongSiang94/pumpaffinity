@@ -3,7 +3,7 @@
  * -------------------------- */
 // The date you want to count down to
 var targetDate = new Date("2023/1/1 00:00:00");   
-var videoDuration = 20500;
+var videoDuration = 21000;
 // Other date related variables
 var days;
 var hrs;
