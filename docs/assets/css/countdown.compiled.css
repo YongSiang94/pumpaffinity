@@ -57,6 +57,9 @@ ul#countdown li .label {
     bottom: 0;
     object-fit: cover;
   }
+  .center {
+    text-align: center;
+  }
   html, body {
     background-color: black;
   }
