@@ -49,7 +49,10 @@ ul#countdown li .label {
 
 @media only screen and (max-width: 480px) {
   video {
-    width: 100vw;
+    width: 475px;
+  }
+  html, body {
+    background-color: black;
   }
 }
 @media only screen and (min-width: 481px) {
