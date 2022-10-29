@@ -15,7 +15,8 @@ var sec;
  * -------------------------- */
 setTimeout(function() {
 // Show timer after video
-  document.querySelector("#countdown").hidden = false
+  document.querySelector("#video-div").hidden = true;
+  document.querySelector("#countdown").hidden = false;
 }, videoDuration);
 $(function() {
    // Calculate time until launch date
