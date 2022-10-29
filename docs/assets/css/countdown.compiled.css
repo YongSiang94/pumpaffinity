@@ -47,7 +47,13 @@ ul#countdown li .label {
   text-transform: uppercase;
 }
 
-video {
+@media only screen and (max-width: 480px) {
+  video {
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 481px) {
+  video {
    width: 100vw;
    height: 100vh;
    object-fit: cover;
@@ -56,9 +62,5 @@ video {
    right: 0;
    top: 0;
    bottom: 0;
-}
-@media only screen and (max-width: 480px) {
-  video {
-    width: 100vw;
   }
 }
