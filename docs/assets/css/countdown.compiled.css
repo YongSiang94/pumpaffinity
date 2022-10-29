@@ -53,12 +53,9 @@ ul#countdown li .label {
     object-fit: cover;
   }
   .video-div {
-    text-align: center;
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
   }
   html, body {
     background-color: black;
