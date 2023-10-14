@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="assets/css/about.min.css">
+    <script type="text/javascript" src="assets/js/platform/platform.js"></script>
 </head>
 
 <body style="background-color: black; overflow-x: hidden;">
@@ -88,11 +89,18 @@
         </div>
     </section>
     <div>
-        <!-- <video width="100%" muted="" loop="" autoplay="">
-            <source type="video/mp4" src="assets/vid/patterson-effort.mp4">
-        </video> -->
+        <script>
+            var videoLink; 
+            if (platform.name == "Safari") {
+                videoLink = "assets/vid/patterson-effort.mp4"
+            } else {
+                videoLink = "https://rr3---sn-a5msenle.c.drive.google.com/videoplayback?expire=1697277047&ei=RzoqZcyqD66-xtYPrKWlOA&ip=76.79.177.130&id=7bf2d3a4cca7bee4&itag=37&source=webdrive&requiressl=yes&xpc=EghotM6WJ3oBAQ==&mh=Xu&mm=32&mn=sn-a5msenle&ms=su&mv=m&mvi=3&pl=17&ttl=transient&susc=dr&driveid=1QmG0qU8rWDYob86-p2lBK3nPKex6Yroj&app=explorer&eaua=B6nAP4UNIos&mime=video/mp4&vprv=1&prv=1&dur=172.338&lmt=1694538614219639&mt=1697265897&subapp=DRIVE_WEB_FILE_VIEWER&txp=0001224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,eaua,mime,vprv,prv,dur,lmt&sig=AGM4YrMwRAIgW4cEHv38IHVP2iTyzUZvyTjSbBCLvOnwifzywtxW3EwCIAwOdfEbeyqqO4TaEXYXu9n8osmvQvnupuf4mMdGPQ-R&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AK1ks_kwRQIgWNqNiKUN5mEGqpTgyQYtXfFlbuKoY1yhr1ZRY5ejT8QCIQChYEQGGTrdseh1G2hxHS3r60tVPVFZWZK2z2stZQykHw==&cpn=n3eXZnExeVqZ63vp&c=WEB_EMBEDDED_PLAYER&cver=1.20231010.01.00"
+            }
+        </script>
         <video width="100%" muted="" loop="" autoplay="">
-            <source src="https://rr3---sn-a5msenle.c.drive.google.com/videoplayback?expire=1697277047&ei=RzoqZcyqD66-xtYPrKWlOA&ip=76.79.177.130&id=7bf2d3a4cca7bee4&itag=37&source=webdrive&requiressl=yes&xpc=EghotM6WJ3oBAQ==&mh=Xu&mm=32&mn=sn-a5msenle&ms=su&mv=m&mvi=3&pl=17&ttl=transient&susc=dr&driveid=1QmG0qU8rWDYob86-p2lBK3nPKex6Yroj&app=explorer&eaua=B6nAP4UNIos&mime=video/mp4&vprv=1&prv=1&dur=172.338&lmt=1694538614219639&mt=1697265897&subapp=DRIVE_WEB_FILE_VIEWER&txp=0001224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,eaua,mime,vprv,prv,dur,lmt&sig=AGM4YrMwRAIgW4cEHv38IHVP2iTyzUZvyTjSbBCLvOnwifzywtxW3EwCIAwOdfEbeyqqO4TaEXYXu9n8osmvQvnupuf4mMdGPQ-R&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AK1ks_kwRQIgWNqNiKUN5mEGqpTgyQYtXfFlbuKoY1yhr1ZRY5ejT8QCIQChYEQGGTrdseh1G2hxHS3r60tVPVFZWZK2z2stZQykHw==&cpn=n3eXZnExeVqZ63vp&c=WEB_EMBEDDED_PLAYER&cver=1.20231010.01.00" type="video/mp4">
+            <script>
+                document.write("<source type='video/mp4' src=" + videoLink + '>');
+            </script>
         </video>
         <div class="container px-0 mb-5">
             <div class="row" style="color: rgba(255,255,255,0.9); padding: 12px;">
