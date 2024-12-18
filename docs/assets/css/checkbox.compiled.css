@@ -1,0 +1,88 @@
+label {
+  display: inline-block;
+  position: relative;
+  padding: 13px 3px 13px 0;
+  overflow: hidden;
+  line-height: 22px;
+  user-select: none;
+}
+label input {
+  position: absolute;
+  bottom: 100%;
+  z-index: -1;
+}
+label span {
+  position: relative;
+  display: inline-block;
+  margin: -10px 0;
+  width: 102px;
+  height: 42px;
+  border: 1px solid #e76e72;
+  border-radius: 5px;
+  box-shadow: inset 0 0 2px #e76e72;
+  vertical-align: middle;
+  background-color: #f0a9ab;
+}
+label span::before {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #292929;
+  font-size: 16px;
+  text-shadow: 0 1px 1px #e66268;
+  content: "no";
+}
+label span::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45px;
+  height: 30px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px #e66268;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  background-image: radial-gradient(ellipse at center, #eee 52%, rgba(255, 255, 255, 0) 53%), radial-gradient(ellipse at center, #cfcfcf 52%, rgba(255, 255, 255, 0) 53%);
+  background-position: 20px 12px, 19px 11px;
+  background-repeat: no-repeat;
+  background-size: 7px 8px, 9px 9px;
+  content: "";
+}
+label input:checked + span {
+  border-color: #64c794;
+  box-shadow: inset 0 0 2px #64c794;
+  background-color: #84d4ad;
+}
+label input:checked + span::before {
+  content: "yes";
+  left: 75%;
+  text-shadow: 0 1px 1px #64c794;
+}
+label input:checked + span::after {
+  left: 5px;
+  box-shadow: 0 1px 2px #64c794;
+}
+label input:focus + span {
+  box-shadow: 0 0 0 3px #bdd7f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Avenir Next, Helvetica Neue, sans-serif;
+  background-color: #f1f1f1;
+}
