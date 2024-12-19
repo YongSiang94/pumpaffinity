@@ -39,9 +39,15 @@
 #events_overview {
   margin-bottom: 50px;
 }
+#rsvp-column {
+  margin-bottom: 50px;
+}
 
 @media (min-width: 768px) {
   #events_overview {
+    margin-bottom: 0px;
+  }
+  #rsvp-column {
     margin-bottom: 0px;
   }
 }
