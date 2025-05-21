@@ -18,105 +18,17 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/styles.min.css">
     <link rel="stylesheet" href="../assets/css/aside.css">
-    <link rel="stylesheet" href="../assets/css/checkbox.compiled.css">
-    <link rel="stylesheet" href="../assets/css/events.css">
+    <link rel="stylesheet" href="../assets/css/gallery.css">
     <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="../assets/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="../assets/fontawesome/css/solid.css" rel="stylesheet" />
     <link href="../assets/fontawesome/css/duotone.css" rel="stylesheet" />
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f8f8f8;
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-      table {
-        border-spacing: 0;
-        width: 80%;
-        margin: 0 auto;
-      }
-      
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
-            background-color: #ffffff;
-            padding: 50px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .logo {
-            max-width: 150px;
-            margin: 0 auto 20px;
-        }
-        h1 {
-            color: black;
-            font-weight: 700;
-        }
-        p {
-            font-size: 18px;
-            color: #333;
-            font-weight: 400;
-        }
-        .timer {
-            font-size: 50px;
-            font-weight: 600;
-            width: 100%;
-        }
-        .btn {
-            background-color: #e74c3c;
-            color: #ffffff;
-            padding: 15px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        .btn:hover {
-            background-color: #c0392b;
-        }
-        .footer {
-            font-size: 14px;
-            color: #666;
-            margin-top: 20px;
-        }
-      #logo {
-        width: 18%;
-      }
-      @media (min-width: 768px) {
-        #logo {
-          width: 15%;
-        }
-      }
-    </style>
-    <meta name="MobileOptimized" content="width">
-    <meta name="apple-web-app-capable" content="true">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
-    <meta name="description" content="Authorised Representative of Patterson Pump Company.">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../../assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/favicon/android-chrome-512x512.png">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.min.css">
-    <link rel="stylesheet" href="../assets/css/aside.css">
-    <link rel="stylesheet" href="../assets/css/checkbox.compiled.css">
-    <link rel="stylesheet" href="../assets/css/events.css">
-    <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="../assets/fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="../assets/fontawesome/css/solid.css" rel="stylesheet" />
-    <link href="../assets/fontawesome/css/duotone.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-</head>
-
-<body class="d-flex flex-column justify-content-start" style="overflow-x: hidden;">
-<header style="position: relative"><a class="logo" href="../../index.html" style="height: 24px;"><svg id="blackLogo" viewBox="0 0 555 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<body>
+    <header style="position: relative"><a class="logo" href="index.html" style="height: 24px;"><svg id="blackLogo" viewBox="0 0 555 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0.640015 63V6.99999H24.88C29.8933 6.99999 34.2134 7.82666 37.84 9.48C41.4667 11.08 44.2667 13.4 46.24 16.44C48.2134 19.48 49.2 23.1067 49.2 27.32C49.2 31.48 48.2134 35.08 46.24 38.12C44.2667 41.16 41.4667 43.5067 37.84 45.16C34.2134 46.76 29.8933 47.56 24.88 47.56H7.84001L13.6 41.72V63H0.640015ZM13.6 43.16L7.84001 37H24.16C28.16 37 31.1467 36.1467 33.12 34.44C35.0934 32.7333 36.08 30.36 36.08 27.32C36.08 24.2267 35.0934 21.8267 33.12 20.12C31.1467 18.4133 28.16 17.56 24.16 17.56H7.84001L13.6 11.4V43.16Z" fill="black"/>
 <path d="M76.5138 63.64C72.9404 63.64 69.7404 62.9467 66.9138 61.56C64.1404 60.1733 61.9804 58.0667 60.4338 55.24C58.8871 52.36 58.1138 48.7067 58.1138 44.28V19.96H70.5938V42.44C70.5938 46.0133 71.3404 48.6533 72.8338 50.36C74.3804 52.0133 76.5404 52.84 79.3138 52.84C81.2338 52.84 82.9404 52.44 84.4338 51.64C85.9271 50.7867 87.1004 49.5067 87.9538 47.8C88.8071 46.04 89.2338 43.8533 89.2338 41.24V19.96H101.714V63H89.8738V51.16L92.0338 54.6C90.5938 57.5867 88.4604 59.8533 85.6338 61.4C82.8604 62.8933 79.8204 63.64 76.5138 63.64Z" fill="black"/>
 <path d="M168.396 19.32C171.809 19.32 174.822 20.0133 177.436 21.4C180.102 22.7333 182.182 24.8133 183.676 27.64C185.222 30.4133 185.996 33.9867 185.996 38.36V63H173.516V40.28C173.516 36.8133 172.796 34.2533 171.356 32.6C169.916 30.9467 167.889 30.12 165.276 30.12C163.462 30.12 161.836 30.5467 160.396 31.4C158.956 32.2 157.836 33.4267 157.036 35.08C156.236 36.7333 155.836 38.84 155.836 41.4V63H143.356V40.28C143.356 36.8133 142.636 34.2533 141.196 32.6C139.809 30.9467 137.809 30.12 135.196 30.12C133.382 30.12 131.756 30.5467 130.316 31.4C128.876 32.2 127.756 33.4267 126.956 35.08C126.156 36.7333 125.756 38.84 125.756 41.4V63H113.276V19.96H125.196V31.72L122.956 28.28C124.449 25.3467 126.556 23.1333 129.276 21.64C132.049 20.0933 135.196 19.32 138.716 19.32C142.662 19.32 146.102 20.3333 149.036 22.36C152.022 24.3333 153.996 27.3733 154.956 31.48L150.556 30.28C151.996 26.92 154.289 24.2533 157.436 22.28C160.636 20.3067 164.289 19.32 168.396 19.32Z" fill="black"/>
@@ -130,59 +42,874 @@
 <path d="M517.622 79.16C515.382 79.16 513.169 78.8133 510.982 78.12C508.795 77.4267 507.009 76.4667 505.622 75.24L510.182 66.36C511.142 67.2133 512.235 67.88 513.462 68.36C514.742 68.84 515.995 69.08 517.222 69.08C518.982 69.08 520.369 68.6533 521.382 67.8C522.449 67 523.409 65.64 524.262 63.72L526.502 58.44L527.462 57.08L542.902 19.96H554.902L535.462 65.64C534.075 69.1067 532.475 71.8267 530.662 73.8C528.902 75.7733 526.929 77.16 524.742 77.96C522.609 78.76 520.235 79.16 517.622 79.16ZM524.982 64.68L505.782 19.96H518.662L533.542 55.96L524.982 64.68Z" fill="black"/>
 </svg>
 </a>
-        <nav class="center desktop"><a href="../../about.html">About</a><a href="https://www.pattersonpumps.com/assets/pdf/460376FireBrochScreen.pdf">Fire</a><a href="https://www.pattersonpumps.com/assets/pdf/NewWater.pdf">Flood</a><a href="https://www.pattersonpumps.com/assets/pdf/HVACBrochure.pdf">HVAC</a></nav>
+        <nav class="center desktop"><a href="about.html">About</a><a href="https://www.pattersonpumps.com/assets/pdf/460376FireBrochScreen.pdf">Fire</a><a href="https://www.pattersonpumps.com/assets/pdf/NewWater.pdf">Flood</a><a href="https://www.pattersonpumps.com/assets/pdf/HVACBrochure.pdf">HVAC</a></nav>
         <nav class="right"><a class="desktop" href="http://distributor.pumpaffinity.com">Account</a><a id="menuBtn" href="#">Menu</a></nav>
     </header>
-    <aside style="position: fixed;"><button class="close">&times;</button><a href="../../about.html">About Us</a><a href="https://www.pattersonpumps.com/assets/pdf/460376FireBrochScreen.pdf">Fire</a><a href="https://www.pattersonpumps.com/assets/pdf/NewWater.pdf">Flood</a><a href="https://www.pattersonpumps.com/assets/pdf/HVACBrochure.pdf">HVAC</a><a href="contact.html">Contact</a><a href="http://distributor.pumpaffinity.com">Account</a></aside>
+    <aside><button class="close">&times;</button><a href="about.html">About Us</a><a href="https://pattersonpumps.com/assets/pdf/Brochures/Brochure%20-%20Fire.pdf">Fire</a><a href="https://www.pattersonpumps.com/assets/pdf/NewWater.pdf">Flood</a><a href="https://www.pattersonpumps.com/assets/pdf/HVACBrochure.pdf">HVAC</a><a href="contact.html">Contact</a><a href="http://distributor.pumpaffinity.com">Account</a></aside>
     <div class="backdrop"></div>
-<div class="container">
-    <!-- Placeholder for Company Logo -->
-    <img id="logo" src="https://www.pumpaffinity.com/assets/img/shaded_logo.png" alt="PumpAffinity">
-
-    <h1 style="margin-bottom: 38px;">Fire Nexus 2025</h1>
-    <p>We're excited to see you at <strong>The Library, Intercontinental Singapore</strong> in:</p>
-    <div>
-        <div class="timer" id="countdown" style="margin-bottom: 10px;">
-          
+    <div class="gallery-container">
+        <div class="gallery-slider">
+            <div class="photo-card"><img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09310.jpg"></div>
+            <div class="photo-card"><img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09236.jpg"></div>
+            <div class="photo-card"><img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09347.jpg"></div>
+            <div class="photo-card"><img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09287.jpg"></div>
+            <div class="photo-card"><img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09278.jpg"></div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center montserrat" style="width: 80%; margin-bottom: 20px;">
+            <p class="sub-heading">Feb 24, 2025</p>
+            <p class="sub-heading"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-dot m-0 p-0">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                </svg></p>
+            <p class="sub-heading">&nbsp;Fire Nexus</p>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 class="montserrat" style="font-weight: 700; margin: 0; text-align: center">Across the Table, Across Borders.</h1>
+            <hr style="border: 3px solid #ff0000; width: 50px; margin: 38px 0;">
         </div>
     </div>
-    
-    <p style="margin-bottom:38px; padding-bottom: 0px; font-weight: bold;">February 24th, 2025<br>7 PM - 10PM</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-xl-6 d-flex justify-content-center align-items-center"><img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09542.jpg" style="width: 100%;"></div>
+            <div class="col-sm-12 col-xl-6 d-flex flex-column justify-content-center align-items-center montserrat center-if-full left my-3">
+                <p>In an industry where performance and reliability are everything, it's rare and refreshing to gather around a table (or multiple) - not just to eat, but to connect. On 24 Feb 2025, we did just that -&nbsp;<span class="montserrat" style="font-weight:bold;">23 industry professionals from 7 different countries</span> gathered in Singapore for an exclusive dinner event.</p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-5 col-sm-12 d-flex flex-column justify-content-center order-1 order-lg-0 mt-3">
+                <p class="montserrat center-if-full right"><span class="montserrat" style="font-weight: bold">Patterson Pump Company</span>, an American industrial stalwart known for its fire protection, HVAC and wastewater pumps. With roots tracing back over a century, Patterson's legacy is built on reliability, durability and engineering excellence. The company's name is etched into infrastucture projects around the world - a testament to its enduring strength. While proud of its legacy, Patterson is far from static - embracing cutting edge manufacturing and energy efficient systems, its pumps are designed to meet the complex demands of today's industrial landscape. Its innovations are driven by a deep understanding of the past, ensuring that modern solutions are grounded in proven principles.</p>
+                <p class="montserrat center-if-full right">Though their industries differ, InterContinental Singapore and Patterson Pump Company are united by a shared philosophy: innovation anchored in tradition. Whether it’s crafting unforgettable guest experiences or engineering systems that keep cities running, both continue to honor their roots while adapting to the future. This harmonious blend of heritage and progress is what keeps these institutions relevant — not just as symbols of excellence in their respective fields, but as benchmarks for how legacy brands can evolve without losing their soul.</p>
+                <p class="montserrat center-if-full right">Nestled in the heart of the historic Bugis precinct, <span class="montserrat" style="font-weight: bold">InterContinental Singapore</span> is a beacon of luxury that draws heavily from Peranakan culture and colonal architecture. From its stately facade to the intricately designed interiors, the hotel has made heritage not just an aesthetic but an experience - allowing guests to immerse themselves in the charm of Singapore's past. Yet, tradition has never held back progress. The hotel continues to reinvent luxury with state of the art amenitis, digital guest experiences, and sustainable practices. It is a place where history lives, not in the past, but as part of a forward-thinking philosophy that keeps the guest experience ever-evolving.</p>
+            </div>
+            <div class="col-lg-7 col-sm-12 photo-gallery mb-3 mb-lg-0" id="preparation">
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09117.jpg">
+                    <a href="#lightbox-1" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09121.jpg">
+                    <a href="#lightbox-2" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09123.jpg">
+                    <a href="#lightbox-3" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09146.jpg">
+                    <a href="#lightbox-4" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09124.jpg">
+                    <a href="#lightbox-5" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09122.jpg">
+                    <a href="#lightbox-6" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09234.jpg">
+                    <a href="#lightbox-7" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09263.jpg">
+                    <a href="#lightbox-8" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09239.jpg">
+                    <a href="#lightbox-9" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09240.jpg">
+                    <a href="#lightbox-10" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09261.jpg">
+                    <a href="#lightbox-11" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09262.jpg">
+                    <a href="#lightbox-12" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09236.jpg">
+                    <a href="#lightbox-13" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09265.jpg">
+                    <a href="#lightbox-14" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09266.jpg">
+                    <a href="#lightbox-15" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09267.jpg">
+                    <a href="#lightbox-16" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09277.jpg">
+                    <a href="#lightbox-17" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09241.jpg">
+                    <a href="#lightbox-18" style="text-decoration: none;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 0.5em">
+            <div class="col-12 d-flex flex-column justify-content-center text-center montserrat">
+                <p>Here are some highlights captured throughout the event, showcasing key moments and memorable experiences</p>
+            </div>
+            <div class="col-12 photo-gallery" id="memories1">
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09149.jpg">
+                    <a href="#lightbox-19" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09130.jpg">
+                    <a href="#lightbox-20" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09148.jpg">
+                    <a href="#lightbox-21" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09143.jpg">
+                    <a href="#lightbox-22" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09159.jpg">
+                    <a href="#lightbox-23" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09167.jpg">
+                    <a href="#lightbox-24" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09206.jpg">
+                    <a href="#lightbox-25" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09257.jpg">
+                    <a href="#lightbox-26" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09272.jpg">
+                    <a href="#lightbox-27" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09288.jpg">
+                    <a href="#lightbox-28" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09289.jpg">
+                    <a href="#lightbox-29" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09291.jpg">
+                    <a href="#lightbox-30" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09292.jpg">
+                    <a href="#lightbox-31" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09305.jpg">
+                    <a href="#lightbox-32" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09319.jpg">
+                    <a href="#lightbox-33" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09324.jpg">
+                    <a href="#lightbox-34" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09328.jpg">
+                    <a href="#lightbox-35" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09339.jpg">
+                    <a href="#lightbox-36" style="text-decoration: none;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center my-3">
+                <p class="montserrat">Joined by Patterson Pump’s International Sales Manager, Don Mealor, who opened the floor—not with a presentation, but with a conversation. Rather than one-directional speeches, we exchanged real-world insights about ongoing fire pump projects, market-specific challenges, and regional regulatory shifts. From understanding installation constraints in dense urban centers to navigating certification requirements across borders, the topics were as diverse as the dishes on the table.</p>
+                <p class="montserrat">What made the night truly valuable wasn’t just the expertise—it was the openness. Ideas flowed freely, feedback was candid, and even the most technical discussions felt like natural extensions of shared passion. Everyone brought something to the table, literally and figuratively.</p>
+            </div>
+            <div class="col-12 photo-gallery" id="memories2">   
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09323.jpg">
+                    <a href="#lightbox-37" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09349.jpg">
+                    <a href="#lightbox-38" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09356.jpg">
+                    <a href="#lightbox-39" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09360.jpg">
+                    <a href="#lightbox-40" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09368.jpg">
+                    <a href="#lightbox-41" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09395.jpg">
+                    <a href="#lightbox-42" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09409.jpg">
+                    <a href="#lightbox-43" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09427.jpg">
+                    <a href="#lightbox-44" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09433.jpg">
+                    <a href="#lightbox-45" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09434.jpg">
+                    <a href="#lightbox-46" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09445.jpg">
+                    <a href="#lightbox-47" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09442.jpg">
+                    <a href="#lightbox-48" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09549.jpg">
+                    <a href="#lightbox-49" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09473.jpg">
+                    <a href="#lightbox-50" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09477.jpg">
+                    <a href="#lightbox-51" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09499.jpg">
+                    <a href="#lightbox-52" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09518.jpg">
+                    <a href="#lightbox-53" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09526.jpg">
+                    <a href="#lightbox-54" style="text-decoration: none;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 0.5em">
+            <div class="col-12 photo-gallery" id="memories3">
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09575.jpg">
+                    <a href="#lightbox-57" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09588.jpg">
+                    <a href="#lightbox-58" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09590.jpg">
+                    <a href="#lightbox-59" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09596.jpg">
+                    <a href="#lightbox-60" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09606.jpg">
+                    <a href="#lightbox-61" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09614.jpg">
+                    <a href="#lightbox-62" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09621.jpg">
+                    <a href="#lightbox-63" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09625.jpg">
+                    <a href="#lightbox-64" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09633.jpg">
+                    <a href="#lightbox-65" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09639.jpg">
+                    <a href="#lightbox-66" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09645.jpg">
+                    <a href="#lightbox-67" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09647.jpg">
+                    <a href="#lightbox-68" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09675.jpg">
+                    <a href="#lightbox-69" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09676.jpg">
+                    <a href="#lightbox-70" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09692.jpg">
+                    <a href="#lightbox-71" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09688.jpg">
+                    <a href="#lightbox-72" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09689.jpg">
+                    <a href="#lightbox-73" style="text-decoration: none;"></a>
+                </div>
+                <div>
+                    <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09707.jpg">
+                    <a href="#lightbox-74" style="text-decoration: none;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 order-1 order-lg-0">
+                <a href="#lightbox-55" style="text-decoration: none;" id="group">
+                    <img style="width:100%; margin-top: 0.5em; margin-bottom: 0.5em;" src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09573.jpg">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-12 d-flex flex-column justify-content-center align-items-center center-if-full left my-3">
+                <p class="montserrat">As we closed the evening, one thing became clear: some of the most valuable industry insights come not in boardrooms, but around a shared meal—where trust is built, and ideas take root. We look forward to hosting more gatherings like this across the region.</p>
+                <p class="montserrat">Here’s to more nights like this—where like-minded people gather not just to talk shop, but to shape the future of the fire pump industry together.</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <h4 class="montserrat text-center"><b>Thank you</b> to all who attended and contributed your perspectives.<br>You are helping shape the future of fire protection—one conversation at a time.</h2>
+        </div>
+    </div>
+    <!-- lightbox for preparation -->
+    <div>
+        <div id="lightbox-1" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09117.jpg">
+                <div class="title">
+                    Table Centerpiece
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-5" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09124.jpg">
+                <div class="title">
+                    Table Centerpiece
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-3" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09123.jpg">
+                <div class="title">
+                    Standing Tables
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-4" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09146.jpg">
+                <div class="title">
+                    Window View
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-2" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09121.jpg">
+                <div class="title">
+                    Welcome Signage - Fire Nexus 2025
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-6" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09122.jpg">
+                <div class="title">
+                    Table Centerpiece
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-7" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09234.jpg">
+                <div class="title">
+                    Dessert Section
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-8" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09263.jpg">
+                <div class="title">
+                    Smoked Duck, Chinese Celery and Light Plum Sauce
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-9" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09239.jpg">
+                <div class="title">
+                    Fancy some bread?
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-10" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09240.jpg">
+                <div class="title">
+                    Provencal Minestrone Soup with Basil Pesto
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-11" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09261.jpg">
+                <div class="title">
+                    Baked Root Vegetables, Pumpkin and Baby Corn
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-12" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09262.jpg">
+                <div class="title">
+                    Hoisin Chicken Pasta with Chestnut
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-13" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09236.jpg">
+                <div class="title">
+                    Appetizier Section
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-14" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09265.jpg">
+                <div class="title">
+                    Seafood Combination with Mushroom Ragout
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-15" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09266.jpg">
+                <div class="title">
+                    Deep Fried Boneless Chicken in Plum Sauce
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-16" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09267.jpg">
+                <div class="title">
+                    Chennai Flavoured Tandoori Mackerel with Raita
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-17" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09277.jpg">
+                <div class="title">
+                    Potato Gratin with Parmesan Cheese
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-18" class="lightbox" onclick="document.querySelector('.close-lightbox').click()">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09241.jpg">
+                <div class="title">
+                    Singapore Traditional Nyonya Kueh
+                    <a href="#preparation" class="close-lightbox"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p class="footer">If you have any questions or need further information, feel free to reach out to us @ <strong></strong>events@pumpaffinity.com</strong>.</p>
-</div>
-
-<script>
-    // Set event date (Singapore Time Zone: UTC+8)
-    let eventDate = new Date("2025-02-24T19:00:00+08:00").getTime();
-    let eventEnd = new Date("2025-02-24T22:00:00+08:00").getTime();
-    let timer = setInterval(function() {
-        let now = new Date().getTime();
-        let distance = eventDate - now;
-        let eventEnded = eventEnd - now;
-        if (eventEnded < 0) { 
-          clearInterval(timer);
-          document.getElementById("countdown").innerHTML = "We hope you enjoyed Fire Nexus 2025. Till next time!";
-          return;
-        } else if (distance < 0) {
-            clearInterval(timer);
-            document.getElementById("countdown").innerHTML = "🎉 It's LIVE! 🎉<br>Are you there yet?!";
-            return;
-        }
-      
-        let days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2,'0');
-        let hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2,'0');
-        let minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2,'0');
-        let seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2,'0');
-        document.getElementById("countdown").innerHTML = 
-          "<table><tr><td>" + days + "</td><td>" + hours + "</td><td>" + minutes + "</td><td>" + seconds + "</td></tr>" + "<tr style='font-weight: normal; font-size: 12px;'><td>Days</td><td>Hours</td><td>Minutes</td><td>Seconds</td></tr>";},1000);
-    //         days + " : " + hours + " : " + minutes + " : " + seconds;
-    // }, 1000);
-</script>
+    <!-- New set of lightbox for memorable photos -->
+    <div>
+        <!-- memories1 -->
+        <div id="lightbox-19" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09149.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-20" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09130.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-21" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09148.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-22" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09143.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-23" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09159.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-24" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09167.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-25" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09206.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-26" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09257.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-27" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09272.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-28" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09288.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-29" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09289.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-30" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09291.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-31" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09292.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-32" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09305.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-33" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09319.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-34" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09324.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-35" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09328.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-36" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09339.jpg">
+                <a href="#memories1" class="close-lightbox"></a>
+            </div>
+        </div>
+        <!-- memories2 -->
+        <div id="lightbox-37" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09323.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-38" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09349.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-39" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09356.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-40" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09360.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-41" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09368.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-42" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09395.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-43" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09409.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-44" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09427.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-45" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09433.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-46" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09434.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-47" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09445.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-48" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09442.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-49" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09549.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-50" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09473.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-51" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09477.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-52" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09499.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-53" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09518.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-54" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09526.jpg">
+                <a href="#memories2" class="close-lightbox"></a>
+            </div>
+        </div>
+        <!-- memories3 -->
+        <div id="lightbox-57" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09575.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-58" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09588.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-59" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09590.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-60" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09596.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-61" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09606.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-62" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09614.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-63" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09621.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-64" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09625.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-65" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09633.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-66" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09639.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-67" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09645.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-68" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09647.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-69" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09675.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-70" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09676.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-71" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09692.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-72" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09688.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-73" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09689.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <div id="lightbox-74" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09707.jpg">
+                <a href="#memories3" class="close-lightbox"></a>
+            </div>
+        </div>
+        <!-- Group photo -->
+        <div id="lightbox-55" class="lightbox">
+            <div class="photo-content">
+                <img src="http://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09573.jpg">
+                <a href="#group" class="close-lightbox"></a>
+            </div>
+        </div>
+    </div>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/smart-forms.min.js"></script>
     <script src="../assets/js/bs-init.js"></script>
-    <script src="../assets/js/events.js"></script>
     <script src="../assets/js/nav.js"></script>
 </body>
 </html>
