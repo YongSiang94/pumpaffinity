@@ -20,14 +20,15 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="assets/css/aside.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
-    <link rel="stylesheet" href="assets/css/online_form.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.compiled.css">
+    <link rel="stylesheet" href="assets/css/events.css">
 </head>
 
-<body style="overflow-x: hidden;">
-    <header style="position: relative"><a class="logo" href="index.html" style="height: 24px;"><svg viewBox="0 0 555 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<body class="d-flex flex-column justify-content-start" style="overflow-x: hidden; background-color: black;">
+    <header class="dark" style="position: relative"><a class="logo" href="index.html" style="height: 24px; filter: invert(100%)"><svg viewBox="0 0 555 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0.640015 63V6.99999H24.88C29.8933 6.99999 34.2134 7.82666 37.84 9.48C41.4667 11.08 44.2667 13.4 46.24 16.44C48.2134 19.48 49.2 23.1067 49.2 27.32C49.2 31.48 48.2134 35.08 46.24 38.12C44.2667 41.16 41.4667 43.5067 37.84 45.16C34.2134 46.76 29.8933 47.56 24.88 47.56H7.84001L13.6 41.72V63H0.640015ZM13.6 43.16L7.84001 37H24.16C28.16 37 31.1467 36.1467 33.12 34.44C35.0934 32.7333 36.08 30.36 36.08 27.32C36.08 24.2267 35.0934 21.8267 33.12 20.12C31.1467 18.4133 28.16 17.56 24.16 17.56H7.84001L13.6 11.4V43.16Z" fill="black"/>
 <path d="M76.5138 63.64C72.9404 63.64 69.7404 62.9467 66.9138 61.56C64.1404 60.1733 61.9804 58.0667 60.4338 55.24C58.8871 52.36 58.1138 48.7067 58.1138 44.28V19.96H70.5938V42.44C70.5938 46.0133 71.3404 48.6533 72.8338 50.36C74.3804 52.0133 76.5404 52.84 79.3138 52.84C81.2338 52.84 82.9404 52.44 84.4338 51.64C85.9271 50.7867 87.1004 49.5067 87.9538 47.8C88.8071 46.04 89.2338 43.8533 89.2338 41.24V19.96H101.714V63H89.8738V51.16L92.0338 54.6C90.5938 57.5867 88.4604 59.8533 85.6338 61.4C82.8604 62.8933 79.8204 63.64 76.5138 63.64Z" fill="black"/>
 <path d="M168.396 19.32C171.809 19.32 174.822 20.0133 177.436 21.4C180.102 22.7333 182.182 24.8133 183.676 27.64C185.222 30.4133 185.996 33.9867 185.996 38.36V63H173.516V40.28C173.516 36.8133 172.796 34.2533 171.356 32.6C169.916 30.9467 167.889 30.12 165.276 30.12C163.462 30.12 161.836 30.5467 160.396 31.4C158.956 32.2 157.836 33.4267 157.036 35.08C156.236 36.7333 155.836 38.84 155.836 41.4V63H143.356V40.28C143.356 36.8133 142.636 34.2533 141.196 32.6C139.809 30.9467 137.809 30.12 135.196 30.12C133.382 30.12 131.756 30.5467 130.316 31.4C128.876 32.2 127.756 33.4267 126.956 35.08C126.156 36.7333 125.756 38.84 125.756 41.4V63H113.276V19.96H125.196V31.72L122.956 28.28C124.449 25.3467 126.556 23.1333 129.276 21.64C132.049 20.0933 135.196 19.32 138.716 19.32C142.662 19.32 146.102 20.3333 149.036 22.36C152.022 24.3333 153.996 27.3733 154.956 31.48L150.556 30.28C151.996 26.92 154.289 24.2533 157.436 22.28C160.636 20.3067 164.289 19.32 168.396 19.32Z" fill="black"/>
@@ -46,57 +47,25 @@
     </header>
     <aside><button class="close">&times;</button><a href="about.html">About Us</a><a href="https://www.pattersonpumps.com/assets/pdf/460376FireBrochScreen.pdf">Fire</a><a href="https://www.pattersonpumps.com/assets/pdf/NewWater.pdf">Flood</a><a href="https://www.pattersonpumps.com/assets/pdf/HVACBrochure.pdf">HVAC</a><a href="https://www.pumpaffinity.com/events">Events</a><a href="contact.html">Contact</a><a href="http://distributor.pumpaffinity.com">Account</a></aside>
     <div class="backdrop"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <form data-bss-recipient="04a1583ab4665c89a094dbb1a9e83653">
-                    <div>
-                        <h5><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-dot m-0">
-                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
-                            </svg>Contact us<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-dot m-0">
-                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
-                            </svg></h5>
-                        <hr style="border-bottom: solid 2px #474544;margin: 0 auto;width: 80px;">
-                        <div class="icon-wrapper my-3"><svg class="icon" viewBox="0 0 145.192 145.192">
-      <path d="M126.82,32.694c-2.804,0-5.08,2.273-5.08,5.075v2.721c-1.462,0-2.646,1.185-2.646,2.647v1.995    c0,1.585,1.286,2.873,2.874,2.873h20.577c1.462,0,2.646-1.185,2.646-2.647v-3.041c0-1.009-0.816-1.825-1.823-1.825v-2.722    c0-2.802-2.276-5.075-5.079-5.075h-1.985v-3.829c0-3.816-3.095-6.912-6.913-6.912h-0.589h-20.45c0-2.67-2.164-4.835-4.833-4.835    H56.843c-2.67,0-4.835,2.165-4.835,4.835H34.356v-3.384h-9.563v3.384v1.178h-7.061v1.416c-2.67,0.27-10.17,1.424-13.882,5.972    c-1.773,2.17-2.44,4.791-1.983,7.793c0.463,3.043,1.271,6.346,2.128,9.841c2.354,9.616,5.024,20.515,0.549,28.077    C2.647,79.44-3.125,90.589,2.201,99.547c4.123,6.935,13.701,10.44,28.5,10.44c1.186,0,2.405-0.023,3.658-0.068v9.028h-0.296    c-2.516,0-4.558,2.039-4.558,4.558v4.566h100.04v-4.564c0-2.519-2.039-4.558-4.558-4.558h-0.297V84.631h0.297    c2.519,0,4.558-2.037,4.558-4.556v-0.009c0-2.516-2.039-4.556-4.556-4.556l-36.786-0.009V61.973c0-2.193-1.777-3.971-3.972-3.971    v-4.711h0.456c1.629,0,2.952-1.32,2.952-2.949h14.227V34.459h1.658c2.672,0,4.834-2.165,4.834-4.834h20.45v3.069H126.82z     M34.06,75.511c-2.518,0-4.558,2.04-4.558,4.556v0.009c0,2.519,2.042,4.556,4.558,4.556h0.296v24.12l-0.042-1.168    c-15.994,0.574-26.122-2.523-30.106-9.229C-0.464,90.5,4.822,80.347,6.55,77.423c4.964-8.382,2.173-19.774-0.29-29.825    c-0.843-3.442-1.639-6.696-2.088-9.638c-0.354-2.35,0.129-4.3,1.484-5.958c3.029-3.714,9.509-4.805,12.076-5.1v1.233h7.061v1.49    v2.684c-2.403,1.114-4.153,2.997-4.676,5.237H18.15c-0.584,0-1.056,0.474-1.056,1.056v0.83c0,0.584,0.475,1.056,1.056,1.056h1.984    c0.561,2.18,2.304,3.999,4.658,5.092v0.029c0,0-2.282,20.823,16.479,22.099v1.102c0,1.177,0.955,2.133,2.133,2.133h3.297    c1.178,0,2.133-0.956,2.133-2.133V50.135c0-1.177-0.955-2.132-2.133-2.132h-3.297c-1.178,0-2.133,0.955-2.133,2.132    c-1.575-0.235-5.532-1.17-6.635-4.547c2.36-1.092,4.109-2.913,4.669-5.097h1.308c0.722,0,1.309-0.584,1.309-1.308v-0.578    c0-0.584-0.475-1.056-1.056-1.056h-1.539c-0.542-2.332-2.416-4.271-4.968-5.363v-2.559h17.651c0,2.67,2.166,4.835,4.836,4.835 h2.392v15.88h13.639c0,1.629,1.321,2.949,2.951,2.949h0.899v4.711c-2.194,0-3.972,1.778-3.972,3.971v13.529L34.06,75.511z     M95.188,101.78c0,8.655-7.012,15.665-15.664,15.665c-8.653,0-15.667-7.01-15.667-15.665c0-8.647,7.014-15.664,15.667-15.664    C88.177,86.116,95.188,93.132,95.188,101.78z M97.189,45.669h-9.556c0-0.896-0.726-1.62-1.619-1.62H74.494    c-0.896,0-1.621,0.727-1.621,1.62h-8.967v-11.21h33.283V45.669z"></path>
-      <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
-    </svg></div>
-                    </div>
-                    <div class="name"><label class="form-label" for="name"></label><input class="form-control" type="text" id="name_input" placeholder="My name is" required="" style="background:none"></div>
-                    <div class="email"><label class="form-label" for="email"></label><input class="form-control" type="email" id="email_input" required="" name="email" placeholder="My e-mail is" style="background:none;"></div>
-                    <div class="telephone"><label class="form-label" for="name"></label><input class="form-control" type="tel" id="telephone_input" placeholder="My number is" required="" name="telephone" style="background:none"></div>
-                    <div class="subject"><label class="form-label" for="subject"></label><select class="form-select" id="subject_input" placeholder="Subject Line" name="subject" required="" style="background:none; border:none; border-bottom:2px solid #474544; border-radius: 0px;">
-                            <option disabled hidden selected="">Subject Line</option>
-                            <option value="Spares">Spares Enquiry</option>
-                            <option value="New_Enquiry">New Enquiry</option>
-                            <option value="After_Sales">After Sales</option>
-                        </select></div>
-                    <div class="message"><label class="form-label" for="message"></label><textarea class="form-control" id="message_input" name="message" placeholder="I'd like to chat about" cols="30" rows="5" required="" style="background:none"></textarea></div>
-                    <div class="text-center submit"><input class="btn" type="submit" id="form_button" value="Send Message"></div>
-                </form>
+    <div class="container" style="z-index:2;">
+        <div class="row" style="z-index:1;">
+            <div class="col-12">
+                <h4 style="width: 100%; border-bottom: solid 1px rgba(255,255,255,0.7); line-height: 2em; color: white;">Events</h4>
             </div>
-            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center" style="padding: 0 12px; margin: 50px 0;">
-                <p class="text-uppercase text-center px-3" style="font-size: 1em; color: #474544; letter-spacing: 1px;margin: 37.5px 0">Have questions, feedback, or just want to connect? We're here to assist with any inquiries or support you may need. please don't hesitate to get in touch.</p>
-                <div class="d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-evenly">
-                    <div class="d-flex flex-row align-items-center contact-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-phone" style="font-size: 3em; margin-right: 20px;">
-                            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
-                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
-                        </svg>
-                        <div class="contact-details"><label class="form-label text-uppercase" style="font-weight: bold">Phone</label><a href="tel:+6598153263">9815 3263</a></div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center contact-wrapper">
-                        <div class="contact-details"><label class="form-label text-uppercase" style="font-weight: bold; text-align: right;">Email</label><a href="mailto:contact@pumpaffinity.com" style="text-align: right">contact@pumpaffinity.com</a></div><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-mailbox2-flag" style="font-size: 3em; margin-left: 20px">
-                            <path d="M10.5 8.5V3.707l.854-.853A.5.5 0 0 0 11.5 2.5v-2A.5.5 0 0 0 11 0H9.5a.5.5 0 0 0-.5.5v8z"></path>
-                            <path d="M4 3h4v1H6.646A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3V3a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4m.585 4.157C4.836 7.264 5 7.334 5 7a1 1 0 0 0-2 0c0 .334.164.264.415.157C3.58 7.087 3.782 7 4 7c.218 0 .42.086.585.157"></path>
-                        </svg>
-                    </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row d-flex flex-column justify-content-end" style="height: 80vh;">
+            <div class="col text-center d-flex flex-column justify-content-end align-items-center" style="background: url(&quot;https://synology.pattersonsingapore.com/assets/img/events/fire_nexus/DSC09542.jpg&quot;) center / cover no-repeat;">
+                <div class="mb-5 px-5" style="z-index:2;">
+                    <h1 style="color: white; font-weight: 700">Fire Nexus 2025</h1>
+                    <p class="mx-5 px-5" style="color: lightgray;">Joined by Patterson Pump's International Sales Manager, the event served as a platform for strengthening relationships, sharing updates, and aligning strategies for continued regional growth.</p><a href="https://www.pumpaffinity.com/events/firenexus2025" style="z-index: 5; color: #0000EE;">What happened&nbsp;<i class="fa-regular fa-circle-play"></i></a>
                 </div>
-                <p class="text-uppercase text-center px-3" style="font-size: 1em; color: #474544; letter-spacing: 1px;margin: 37.5px 0">Our team will respond as promptly as possible.</p>
+                <div style="position: absolute;top: 0;height: 100%;width: 100%;z-index: 0;background-color: rgba(0,0,0,.7);backdrop-filter: blur(2px);-webkit-backdrop-filter: blur(2px);box-shadow: 0 0 54px 45px rgba(0,0,0,1) inset;-webkit-box-shadow: 0 0 54px 45px rgba(0,0,0,1) inset;-moz-box-shadow: 0 0 54px 45px rgba(0,0,0,1) inset;"></div>
             </div>
         </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/events.js"></script>
     <script src="assets/js/nav.js"></script>
 </body>
